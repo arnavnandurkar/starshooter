@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Cockpit Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="crt-overlay"></div>
+
+    <div id="start-screen">
+        <h1>STARFIGHTER<br>DEFENSE</h1>
+        <button id="start-btn">ENGAGE THRUSTERS</button>
+    </div>
+
+    <div id="pause-screen">
+        <h2>SYSTEMS PAUSED</h2>
+        <p>Press 'P' or ESC to Resume</p>
+    </div>
+
+    <div id="damage-flash"></div>
+
+    <div id="cockpit-layer">
+        <div id="custom-cockpit"></div>
+
+        <div id="dashboard">
+            <div class="instrument-panel">
+                <div class="panel-label">HULL INTEGRITY</div>
+                <div id="health-container">
+                    <div id="health-bar"></div>
+                </div>
+            </div>
+            
+            <div class="instrument-panel">
+                <div class="panel-label">SYSTEM LIVES</div>
+                <div id="hearts-container"></div>
+            </div>
+            
+            <div class="instrument-panel">
+                <div class="panel-label">TARGETS DESTROYED</div>
+                <div id="score-display">0000</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="game-over">
+        CRITICAL HULL FAILURE<br>
+        <span style="font-size: 24px; color: #fff;">Press SPACE or Click to Reboot</span>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+    
+    <canvas id="uiCanvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
