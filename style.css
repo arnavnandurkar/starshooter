@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Amelia;
+  src: url(amelia.ttf);
+}
+
 body { 
     margin: 0; 
     overflow: hidden; 
@@ -31,17 +36,27 @@ body.game-active {
 }
 
 #start-screen {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0; 
+    width: 100%; 
+    height: 100%;
     background-color: rgba(5, 5, 16, 0.95);
     z-index: 50; 
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
 }
 
 #start-screen h1 { 
+    font-family: 'Amelia';
     font-size: 72px; 
     text-shadow: 0 0 20px #00ff00; 
     text-align: center; 
     margin-bottom: 50px; 
+}
+
+#pause-screen h2{
+    font-family: 'Amelia';
 }
 
 #start-btn { 
@@ -141,6 +156,7 @@ body.game-active {
 }
 
 #score-display { 
+    font-family: 'Amelia';
     font-size: 28px; 
     font-weight: bold; 
     text-shadow: 0 0 8px #00ff00; 
@@ -190,13 +206,14 @@ body.game-active {
 #game-over { 
     position: absolute; 
     top: 40%; 
+    font-family:'Amelia';
     left: 50%; 
     transform: translate(-50%, -50%); 
     font-size: 50px; 
     text-align: center; 
     display: none; 
     text-shadow: 0 0 20px #ff0000; 
-    color: #ff0000; 
+    color: #e0e0e0; 
     z-index: 30; 
     background: rgba(0,0,0,0.8); 
     padding: 20px 40px; 
